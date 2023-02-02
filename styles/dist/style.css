@@ -103,7 +103,7 @@ footer.page-footer .socials a:hover {
   align-items: center;
 }
 .page-header nav .logo {
-  font-size: 52px;
+  font-size: 40px;
   font-weight: 800;
   color: #ddb980;
   font-family: "Great Vibes";
@@ -114,17 +114,17 @@ footer.page-footer .socials a:hover {
   height: 100%;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .page-header nav ul li {
-  height: 100%;
-  padding: 2px 8px;
+  padding: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .page-header nav ul li a {
   width: 100%;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   color: #fff;
   display: flex;
@@ -139,6 +139,7 @@ footer.page-footer .socials a:hover {
 section {
   padding: 58px 0px;
   margin: auto;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,7 +209,8 @@ section.banner-mid .layer {
 }
 
 .section-title {
-  margin-bottom: 24px;
+  margin: 30px auto;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -324,4 +326,67 @@ button {
 .service p {
   color: #e3e3e3;
   font-size: 14px;
+}
+
+@media (max-width: 500px) {
+  .section-title {
+    margin-bottom: 10px;
+  }
+  .section-title h1 {
+    font-size: 40px;
+  }
+  .section-title h2 {
+    font-size: 40px;
+  }
+
+  section {
+    padding: 18px 0px;
+  }
+  section#about .ourstory p {
+    margin: 0;
+    font-size: 14px;
+  }
+  section#about .clip-img {
+    display: none;
+  }
+
+  .service-container {
+    width: 98%;
+  }
+  .service-container .service i {
+    font-size: 44px;
+  }
+  .service-container .service h2 {
+    font-size: 18px;
+  }
+  .service-container .service p {
+    font-size: 12px;
+  }
+
+  .text.search {
+    width: 260px;
+  }
+  .text.search button,
+.text.search input,
+.text.search i {
+    font-size: 14px;
+  }
+
+  form .text {
+    width: 95%;
+  }
+  form .text input,
+form .text i,
+form .text button {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }

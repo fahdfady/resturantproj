@@ -117,7 +117,7 @@ footer.page-footer {
         align-items: center;
 
         .logo {
-            font-size: 52px;
+            font-size: 40px;
             font-weight: 800;
             color: $primary-color;
             font-family: 'Great Vibes';
@@ -129,16 +129,17 @@ footer.page-footer {
             height: 100%;
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
 
             li {
-                height: 100%;
-                padding: 2px 8px;
+                // height: 100%;
+                padding: 8px;
                 @include CenterAll();
 
                 a {
                     width: 100%;
                     // padding: 0 18px;
-                    font-size: 18px;
+                    font-size: 16px;
                     font-weight: 700;
                     color: #fff;
                     @include CenterAll();
@@ -156,6 +157,7 @@ footer.page-footer {
 section {
     padding: 58px 0px;
     margin: auto;
+    text-align: center;
     @include CenterAll();
     flex-direction: column;
 
@@ -229,7 +231,8 @@ section {
 }
 
 .section-title {
-    margin-bottom: 24px;
+    margin: 30px auto;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -355,5 +358,86 @@ button {
     p {
         color: #e3e3e3;
         font-size: 14px;
+    }
+}
+
+@media(max-width:500px) {
+
+    .section-title {
+        margin-bottom: 10px;
+
+        h1 {
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+    }
+
+    section {
+        padding: 18px 0px;
+
+        &#about {
+            .ourstory {
+                p {
+                    margin: 0;
+                    font-size: 14px;
+                }
+            }
+
+            .clip-img {
+                display: none;
+            }
+        }
+    }
+
+    .service-container {
+        width: 98%;
+
+        .service {
+            i {
+                font-size: 44px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 12px;
+
+            }
+        }
+    }
+
+    .text.search {
+        width: 260px;
+
+        button,
+        input,
+        i {
+            font-size: 14px;
+        }
+    }
+
+    form {
+        .text {
+            width: 95%;
+
+            input,
+            i,
+            button {
+                font-size: 16px;
+            }
+        }
+    }
+
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 16px;
+        line-height: 1.5;
     }
 }
