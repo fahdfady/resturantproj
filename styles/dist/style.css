@@ -53,7 +53,7 @@ body {
 }
 
 .not-footer {
-  padding-bottom: 180px;
+  padding-bottom: 220px;
 }
 
 footer.page-footer {
@@ -63,7 +63,7 @@ footer.page-footer {
   right: 0;
   z-index: 999;
   width: 100%;
-  height: 150px;
+  height: 200px;
   background: #893f3f;
 }
 footer.page-footer .footer-container {
@@ -137,7 +137,7 @@ footer.page-footer .socials a:hover {
 }
 
 section {
-  padding: 58px 0px;
+  padding: 44px 0px;
   margin: auto;
   text-align: center;
   display: flex;
@@ -149,7 +149,7 @@ section#banner {
   padding: 0;
   width: 100%;
   height: 75vh;
-  filter: brightness(0.2) saturate(1.2);
+  filter: brightness(0.5) saturate(1.2);
   background: #000;
   background-attachment: fixed;
   position: relative;
@@ -186,6 +186,25 @@ section#about .clip-img img {
   height: 100%;
   object-fit: cover;
   filter: drop-shadow(2px 2px 8px #000000b6);
+}
+section#menu .products-container {
+  gap: 42px 0px;
+}
+section#menu .product .product-image img {
+  width: 320px;
+  height: 240px;
+  object-fit: contain;
+  filter: drop-shadow(2px 4px 6px #c562624f);
+}
+section#menu .product .product-name h3 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #ddb980;
+}
+section#menu .product .product-price p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #F1DBBF;
 }
 section.banner-mid {
   background: url("../assets/bannermid.jpg");
@@ -325,6 +344,41 @@ button {
 }
 .service p {
   color: #e3e3e3;
+  font-size: 14px;
+}
+
+.chef-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  height: 440px;
+  background-color: #2a372a;
+  position: relative;
+  padding: 0px 18px;
+  margin: 20px 0px;
+}
+
+.chef-image {
+  position: absolute;
+  bottom: 0;
+}
+.chef-image img {
+  width: 380px;
+  height: unset;
+  object-fit: cover;
+}
+
+.chef-data {
+  margin-left: auto;
+}
+
+.chef-name {
+  font-size: 52px;
+  font-family: "Great Vibes";
+  color: #F1DBBF;
+}
+
+.chef-brief {
   font-size: 14px;
 }
 
